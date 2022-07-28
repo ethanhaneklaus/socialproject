@@ -83,7 +83,7 @@ function App() {
           <Route
             path="/notify"
             element={
-              <ProtectedRoute requiresLogin={true} component={NotificationsPage />}
+              <ProtectedRoute requiresLogin={true} component={<NotificationsPage />}
               />
             }
           />
@@ -104,7 +104,7 @@ function App() {
           <Route
             path="/share"
             element={
-              <ProtectedRoute requiresLogin={true} component={SharePage />}
+              <ProtectedRoute requiresLogin={true} component={<SharePage />}
               />
             }
           />
@@ -125,7 +125,7 @@ function App() {
           <Route
             path="/version"
             element={
-              <ProtectedRoute requiresLogin={true} component={VersionPage />}
+              <ProtectedRoute requiresLogin={true} component={<VersionPage />}
               />
             }
           />
