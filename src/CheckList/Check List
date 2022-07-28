@@ -1,0 +1,159 @@
+Main Page
+-This page will need to display/access all of the information provided bellow.
+    `User's Profile -via link by ProfilePicture or by swiping to the right-
+        onClick= User Display
+            -Menu
+                `Settings
+                `Contact Support Info
+                `User Agreements
+    `User's Suggested Viewing
+        +Based on Following Trends, Viewing Trends, Reacting Trends, Search Trends
+        +Display Post's Poster and Creator's Profile: Image, handle, Pronouns on the [RightCenter]
+    `Interaction Buttons
+        +Like
+        +Comment
+        +Share
+        +Text
+        +Save
+    `Display poster's discription of content if its and img or video
+    `Displayed Suggested Viewing Comments Section
+        +Shows single line information based on Original Poster's pinned comments or Top comments [BottomCentered]
+        +Only displays 2
+        + "..." button to display more comments
+
+User's Profile Page
+-This page will need to display/access all of the information provided bellow.
+    `User's Menu [TopRight]
+        +Settings
+            -Notifications
+                `Mute
+                    +Temp Mute
+                        -Time Amout Specified Days00:Hours00:Minutes00
+                    +On/Off
+            -Privacy Settings
+                `Visible to
+                    +Everyone (default)
+                    +Friends and Followers
+                    +Private
+                    +Invite Only
+            -Display Settings
+                `Pronouns/Identification
+                `Age
+                `Location (Country,State/Province)
+            -Share Settings
+                `Show Shareable Options
+                    +Contacts
+                    +Download
+                    +Email
+                    +Facebook
+                    +Facebook Messanger
+                    +Instagram
+                    +Snapchat
+                    +TikTok
+                    +Twitter
+            -Day/Dark Mode
+                `On/Off
+            -Username&Password {Requires Authentication}
+                `Displayed Username&Password
+                `Change Username or Password
+                `Pin {Requires Authentication}
+                    +Display Pin
+                    +Change Pin
+            -Version 00.00(000)
+            -Log Out
+            -Deactivate Account {Requires Authentication} {Requires Re-acknowledgment}
+        +Account Info
+            -Subscriptions
+            -Pronouns
+            -Provided Private Info {Requires Authentication}
+                `Debit/Credit Cards (optional until purchase)
+                    +Add/Remove
+                `Socail Security (optional)
+                `Occupation (optional)
+                `Age and Birth Date
+                `Address, Counrty, and State (NOT optional)
+        +Self Contact Info {Requires Authentication}
+            -Phone
+            -Email
+            -Socail links
+            -Other Services
+        +Contact Support Info
+            -Phone, Fax, Email, Office Locations
+            -Report Account/Persons
+            -Report Bug/Problem
+        +User Agreements
+            -User Agreement
+            -User Terms
+            -Legal Disclaimers
+            -Laws YOU And US Need To Follow
+    `Navigation Buttons
+        +Spans across the top of the page next to UserImg and Menu
+            -Suggested
+            -Favorites
+            -Saved
+    `Display Cover Photo
+    `Display User's Content
+    `Display poster's discription of content if its and img or video
+    `Displayed Viewing Comments Section
+        +Shows single line information based on Poster's pinned comments or Top comments [BottomCentered]
+        +Only displays 2
+        + "..." button to display more comments
+
+Profile Page
+-This page will need to display/access all of the information provided bellow.
+    `Profile Menu 
+        +Displayed at [TopRight] Button type [TrippleStackBars]
+            -Settings
+                `Block
+                `Report
+                `Flag
+            -Contact Info
+            -SocailS
+            -Other Services
+    `Display Profile Info
+        +Profile Img
+        +User's AboutMe/Moto
+        +User's Name
+        +User's Handle
+        +User's Location
+    `Follow/Unfollow button [img]
+    `Display Cover Photo
+    `Display User's Content
+    `Interaction Buttons
+    `Display poster's discription of content if its and img or video
+    `Displayed Viewing Comments Section
+        +Shows single line information based on Poster's pinned comments or Top comments [BottomCentered]
+        +Only displays 2
+        + "..." button to display more comments
+
+    
+
+Following Page
+-This page will need to display/access all of the information provided bellow.
+    `Profile Menu 
+        +Displayed at [TopRight] Button type [TrippleStackBars]
+            -Settings
+                `Block
+                `Report
+                `Flag
+            -Contact Info
+            -SocailS
+            -Other Services
+    `Display Profile Info
+        +Profile Img
+        +User's AboutMe/Moto
+        +User's Name
+        +User's Handle
+        +User's Location
+    `Follow/Unfollow button [img]
+    `Display Cover Photto
+    `Display User's Content
+    `Interaction Buttons
+    `Display poster's discription of content if its and img or video
+    `Displayed Viewing Comments Section
+        +Shows single line information based on Poster's pinned comments or Top comments [BottomCentered]
+        +Only displays 2
+        + "..." button to display more comments
+
+
+
