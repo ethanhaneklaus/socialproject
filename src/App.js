@@ -12,15 +12,15 @@ import AccountPage from "./display/AccountPage";
 import SearchPage from "./display/SearchPage";
 import LikesPage from "./display/LikesPage";
 import Menu from "./display/Menu";
-import SettingsPage from "./display/SettingsPage";
-import NotificationsPage from "./display/NotificationsPage";
-import PrivacyPage from "./display/PrivacyPage";
-import DisplayPage from "./display/DisplayPage";
-import SharePage from "./display/SharePage";
-import DayDarkPage from "./display/DayDarkPage";
-import LoginInfoPage from "./display/LoginInfoPage";
-import VersionPage from "./display/VersionPage";
-import DeactivateAccountPage from "./display/DeactivateAccountPage";
+import SettingsPage from "./menu-pages/SettingsPage";
+import NotificationsPage from "./menu-pages/NotificationsPage";
+import PrivacyPage from "./menu-pages/PrivacyPage";
+import DisplayPage from "./menu-pages/DisplayPage";
+import SharePage from "./menu-pages/SharePage";
+import DayDarkPage from "./menu-pages/DayDarkPage";
+import LoginInfoPage from "./menu-pages/LoginInfoPage";
+import VersionPage from "./menu-pages/VersionPage";
+import DeactivateAccountPage from "./menu-pages/DeactivateAccountPage";
 
 import ProtectedRoute from "./shared/ProtectedRoute";
 
