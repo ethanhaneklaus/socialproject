@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { SearchContext } from "../context/SearchContext";
 import { AccountContext } from "../context/AccountContext";
-import { SettingsContext } from "../Context/SettingsContext";
-import { UserContext } from "../Context/UserContext";
-
+import { SettingsContext } from "../context/SettingsContext";
+import { UserContext } from "../context/UserContext";
+import { LikesContext } from "../context/LikesContext";
 function Menu() {
     const { loggedInUser, logout } = useContext(UserContext);
     const { setSearchResults } = useContext(SearchContext);
