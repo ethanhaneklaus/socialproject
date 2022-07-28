@@ -11,7 +11,7 @@ import UserPage from "./display/UserPage";
 import AccountPage from "./display/AccountPage";
 import SearchPage from "./display/SearchPage";
 import LikesPage from "./display/LikesPage";
-import Menu from "./display/Menu";
+import Menu from "./components/Menu";
 import SettingsPage from "./menu-pages/SettingsPage";
 import NotificationsPage from "./menu-pages/NotificationsPage";
 import PrivacyPage from "./menu-pages/PrivacyPage";
