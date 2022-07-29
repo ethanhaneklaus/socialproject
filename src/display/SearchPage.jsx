@@ -1,17 +1,15 @@
 import React, { useContext, useEffect, useMemo, useState } from "react";
-import { FavoritesContext } from "../context/FavoritesContext";
 import { SearchContext } from "../context/SearchContext";
-import { like, likes, setLikes, add, remove, setLike } from "../context/LikesContext";
-import useAxios from "../hooks/useAxios";
-import GifDisplay from "./GifDisplay";
+import { like, likes, setLikes, add, remove, setLike, LikesContext } from "../context/LikesContext";
+import useAxios from "../hook/useAxios";
 
 function SearchPage() {
     const [url, setUrl] = useState("");
     const [search, setSearch] = useState("");
     const [rating, setRating] = useState("g");
     const { searchResults, setSearchResults } = useContext(SearchContext);
-    const { favorites, add, remove } = useContext(FavoritesContext);
-    const { data } = useAxios(url);
+    const { likes, add, remove } = useContext(LikesContext);
+    const { data: data, error } = useAxios(url);
     const likesIDs = useMemo(
         () => likes.map((val) => val.data_id),
         [likes]
@@ -61,7 +59,7 @@ function SearchPage() {
                     {data &&
                         data.length > 0 &&
                         searchResults.map((d) => (
-                            <GifDisplay
+                            <DataDisplay
                                 data={d}
                                 key={d.data_id}
                                 add={add}
@@ -76,5 +74,5 @@ function SearchPage() {
             </div>
         );
     }
-
-    export default SearchPage;
+}
+export default SearchPage;

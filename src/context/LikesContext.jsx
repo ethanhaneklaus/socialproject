@@ -19,7 +19,7 @@ export function LikesProvider(props) {
     );
 
     return (
-        <LikesContext.Provider value={{ like, likes, setLikes, add, remove, setLike }}>
+        <LikesContext.Provider value={{ like, likes, setLikes, add, remove, setLike, LikesContext }}>
             {props.children}
         </LikesContext.Provider>
     );
