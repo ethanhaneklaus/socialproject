@@ -3,23 +3,25 @@ import React, { useState, useCallback, createContext } from "react";
 export const LikesContext = createContext(null);
 
 export function LikesProvider(props) {
-    const [Likes, setLikes] = useState([]);
+    const [like, setLike] = useState([]);
+    const [likes, setLikes] = useState([]);
 
     const add = useCallback(
-        (data) => setLikes((curr) => [...curr, data]),
-        [setLikes]
+        (data) => setLike((curr) => [...curr, data]),
+        [setLike]
     );
 
     const remove = useCallback(
         (id) => {
-            setLikes((curr) => curr.filter((val) => val.data_id !== id));
+            setLike((curr) => curr.filter((val) => val.data_id !== id));
         },
-        [setLikes]
+        [setLike]
     );
 
     return (
-        <LikesContext.Provider value={{ Likes, add, remove }}>
+        <LikesContext.Provider value={{ like, likes, setLikes, add, remove, setLike }}>
             {props.children}
         </LikesContext.Provider>
     );
 }
+

@@ -12,10 +12,10 @@ function Menu() {
 
     return (
         <nav>
-            <div class="dropdown">
-                <button class="dropbtn">Menu</button>
+            <div className="dropdown">
+                <button className="dropbtn">Menu</button>
 /* dropbtn changes the color of the actual button */
-                <div class="dropdown-content">
+                <div className="dropdown-content">
 /* dropdown-content changes color of tabs in drop down */
                     <ul>
                         {loggedInUser && (

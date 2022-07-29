@@ -1,5 +1,6 @@
-import React, { useState, UserContext, useContext, useMemo } from "react";
+import React, { useState, useContext, useMemo } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -66,10 +67,10 @@ function LoginPage() {
           </div>
         </div>
         <button
-          disabled={passError || usernameError}
+          disabled={passwordError || usernameError}
           onClick={(e) => {
             e.preventDefault();
-            if (!passError && !usernameError) {
+            if (!passwordError && !usernameError) {
               login(username);
               navigate("/search");
             }
