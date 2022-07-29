@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useMemo, useState } from "react";
 import { SearchContext } from "../context/SearchContext";
 import { like, likes, setLikes, add, remove, setLike, LikesContext } from "../context/LikesContext";
+import DataDisplay from "../components/SearchDisplay";
 import useAxios from "../hook/useAxios";
 
 function SearchPage() {
