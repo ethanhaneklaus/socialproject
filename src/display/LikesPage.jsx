@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { LikesContext } from "../context/LikesContext";
 import { UserContext } from "../context/UserContext";
+import DataDisplay from "../components/SearchDisplay"
 
 function LikesPage() {
     const { Likes, add, remove } = useContext(LikesContext);
@@ -14,7 +15,7 @@ function LikesPage() {
                     Likes.map((data) => (
                         <DataDisplay
                             data={data}
-                            key={g.data_id}
+                            key={data.data_id}
                             add={add}
                             remove={remove}
                             isLikes={true}

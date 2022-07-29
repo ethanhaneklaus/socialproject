@@ -21,13 +21,25 @@ import DayDarkPage from "./menu-pages/DayDarkPage";
 import LoginInfoPage from "./menu-pages/LoginInfoPage";
 import VersionPage from "./menu-pages/VersionPage";
 import DeactivateAccountPage from "./menu-pages/DeactivateAccountPage";
+import { SearchContext } from "./context/SearchContext";
+import { LikesContext } from "./context/LikesContext";
 
 import ProtectedRoute from "./shared/ProtectedRoute";
+import { useState, useContext, useMemo } from "react";
 
 
 
 
 function App() {
+  const [url, setUrl] = useState("");
+  const [search, setSearch] = useState("");
+  const { searchResults, setSearchResults } = useContext(SearchContext);
+  const { likes, add, remove, data } = useContext(LikesContext);
+  const likesIDs = useMemo(
+    () => likes.map((val) => val.data_id),
+    [likes]
+  );
+
   return (
     <>
       <Router>
@@ -140,7 +152,39 @@ function App() {
           />
         </Routes>
       </Router>
+      <form>
+        <label htmlFor="search">Search</label>
+        <input
+          type="search"
+          name="searchBar"
+          id="search-bar"
+          value={searchResults}
+          onChange={(e) => { setSearchResults(e.target.value) }}
+        />
+        <button
+          onClick={(e) => { e.preventDefault(); setUrl("&q=" + searchResults); }}
+        >submit</button>
+      </form >
+      <div className="flex flex-wrap">
+
+        {data && data.map((data, idx) => (<div className="" key={idx} >
+          <img
+            onClick={(data) => (data)}
+            src={data.url}
+            alt={data.title}
+            add={add}
+            remove={remove}
+            isFavorite={likesIDs.includes(data.data_id)}
+          />
+        </div>
+        ))}
+        {data && data.length === 0 && (
+          <h3 className="text-center col-12">No results found</h3>
+        )}
+        {console.log(data)}
+      </div>
     </>
+
   );
 }
 

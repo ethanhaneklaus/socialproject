@@ -1,8 +1,17 @@
 import React from "react";
 
 
-export function SearchPage(props) {
+function SearchPage(props) {
+    const LikesIDs = useMemo(
+        () => likes.map((val) => val.data_id),
+        [likes]
+    );
 
+    useEffect(() => {
+        if (data) {
+            setSearchResults(data);
+        }
+    }, [data, setSearchResults]);
 }
 
 export default SearchPage;

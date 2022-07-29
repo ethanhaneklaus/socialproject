@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function RegisterPage() {
@@ -6,13 +6,14 @@ function RegisterPage() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
     const passwordError = useMemo(
         () => password.length < 5 || password.length > 20,
         [password]
     );
     const confirmError = useMemo(
-        () => confirmPassword !== password || passError,
-        [confirmPassword, password, passError]
+        () => confirmPassword !== password || passwordError,
+        [confirmPassword, password, passwordError]
     );
     const usernameError = useMemo(
         () => username.length < 4 || username.length > 20,
