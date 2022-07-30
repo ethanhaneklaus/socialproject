@@ -17,7 +17,7 @@ export default function useAxios(url) {
 
       try {
 
-        const response = await axios.get(`&q=${search}` + url);
+        const response = await axios.get(`&q=` + url);
         const data = response.data.data.map((val) => ({
           data_id: val.id,
           title: val.title,

@@ -1,10 +1,10 @@
-import React, { useState, createContext, useMemo, useEffect } from "react";
-import { like, likes, setLikes, add, remove, setLike } from "../context/LikesContext";
+import React, { useState, createContext, useMemo, useEffect, useContext } from "react";
+import { like, likes, setLikes, add, remove, setLike, LikesContext } from "../context/LikesContext";
 
 export const SearchContext = createContext(null);
 
 export function SearchProvider(props) {
-
+  const { likes } = useContext(LikesContext)
   const [searchResults, setSearchResults] = useState([]);
   const [data, setData] = useState(null);
   const likesIDs = useMemo(

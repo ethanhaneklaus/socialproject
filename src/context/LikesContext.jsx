@@ -1,6 +1,6 @@
 import React, { useState, useCallback, createContext } from "react";
 
-export const LikesContext = createContext(null);
+export const LikesContext = createContext([]);
 
 export function LikesProvider(props) {
     const [like, setLike] = useState([]);
